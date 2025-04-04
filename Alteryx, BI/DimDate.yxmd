@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="247" y="368" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=`inputfilestaging`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ARREST_KEY" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_DATE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PD_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="KY_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="OFNS_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="LAW_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="LAW_CAT_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_BORO" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_PRECINCT" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="JURISDICTION_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="AGE_GROUP" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PERP_SEX" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PERP_RACE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="X_COORD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Y_COORD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Latitude" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Longitude" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Lon_Lat" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="DateTime" />
+            <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="355" y="368" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ARREST_DATE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1195" y="320" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\shaba\AppData\Local\Temp\Engine_13512_cb0b717c8a2d4585a5bbaadb63b5a8da_\Engine_3180_7462c3249a1f4f60b7a0ec2f5e925913_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1171" y="392" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||DimDate</File>
+          <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=DimDate</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="451" y="368" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeParse([ARREST_DATE],'%m/%d/%Y')" field="Actual_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeYear([Actual_Date])" field="DateYear" size="2" type="Int16" />
+            <FormulaField expression="DateTimeMonth([Actual_Date])" field="DateMonth" size="2" type="Int16" />
+            <FormulaField expression="DateTimeDay([Actual_Date])" field="DateDay" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Actual_Date = DateTimeParse([ARREST_DATE],'%m/%d/%Y')
+DateYear = DateTimeYear([A...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="883" y="380" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DI_JobId" selected="True" />
+            <SelectField field="DateKey2" selected="False" rename="DateKey" />
+            <SelectField field="DateKey" selected="False" />
+            <SelectField field="Month" selected="False" />
+            <SelectField field="Week" selected="False" />
+            <SelectField field="Day" selected="False" />
+            <SelectField field="MonthName" selected="False" />
+            <SelectField field="DI_CreatedDate" selected="False" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="ARREST_DATE" selected="True" />
+            <SelectField field="DateTime_Out" selected="False" />
+            <SelectField field="Actual_Date" selected="True" />
+            <SelectField field="DateYear" selected="True" />
+            <SelectField field="DateMonth" selected="True" />
+            <SelectField field="DateDay" selected="True" />
+            <SelectField field="Date_Key" selected="False" />
+            <SelectField field="ArrestDate" selected="False" />
+            <SelectField field="ArrestDateKey" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="559" y="368" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ArrestDateKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="715" y="368" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeToday()" field="DI_CreateDate" size="10" type="Date" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobId" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeToday()
+DI_JobId = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="152" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 36</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="79" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>ActualDate</CreateField_Name>
+              <CreateField_Type>Date</CreateField_Type>
+              <CreateField_Size>10</CreateField_Size>
+              <Expression_Init>"2006-01-01"</Expression_Init>
+              <Expression_Cond>DateKey&lt;= "2021-12-31"</Expression_Cond>
+              <Expression_Loop>DateTimeAdd(DateKey, 1, "days")</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="247" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat([DateKey],'%Y-%m-%d')" field="DateKey" size="10" type="Date" />
+                <FormulaField expression="DateTimeFormat([DateKey],'%m')" field="Month" size="64" type="String" />
+                <FormulaField expression="DateTimeFormat([DateKey],'%U')" field="Week" size="64" type="String" />
+                <FormulaField expression="DateTimeFormat([DateKey],'%A')" field="Day" size="64" type="String" />
+                <FormulaField expression="DateTimeFormat([DateKey],'%B')" field="MonthName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DateKey = DateTimeFormat([DateKey],'%Y-%m-%d')
+Month = DateTimeFormat([DateKey],...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="138" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\shaba\AppData\Local\Temp\Engine_25964_679ef472f4e7410cb6fac781908644e5_\Engine_3180_30eb7e3e6d1e4814b4dd2c04bebbe183_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="343" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>DateKey</InputFieldName>
+              <Language>English</Language>
+              <Format>yyyyMMdd</Format>
+              <OutputFieldName>DateKey</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert DateKey To:
+yyyyMMdd</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="751" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\shaba\AppData\Local\Temp\Engine_25964_679ef472f4e7410cb6fac781908644e5_\Engine_3180_1acfc7bfc8bf46cfb03c9b04ba17ebb8_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="451" y="116" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeToday()" field="DI_CreateDate" size="10" type="Date" />
+                <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobId" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeToday()
+DI_JobId = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="535" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DI_JobId" selected="True" />
+                <SelectField field="DateKey2" selected="True" rename="DateKey" />
+                <SelectField field="DateKey" selected="False" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="Week" selected="True" />
+                <SelectField field="Day" selected="True" />
+                <SelectField field="MonthName" selected="True" />
+                <SelectField field="DI_CreatedDate" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="655" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||DimDate</File>
+              <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+              <FormatSpecificOptions>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Query=DimDate</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimDate</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5106ef9c-7c53-497a-9095-179e0858e4c8" />
+      <Telemetry>
+        <PreviousWorkflowId value="d31e8e1b-9912-4182-9b83-be175b46c842" />
+        <OriginWorkflowId value="d31e8e1b-9912-4182-9b83-be175b46c842" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

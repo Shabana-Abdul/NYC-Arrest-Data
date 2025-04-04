@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=`inputfilestaging`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ARREST_KEY" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_DATE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PD_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="KY_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="OFNS_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="LAW_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="LAW_CAT_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_BORO" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_PRECINCT" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="JURISDICTION_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="AGE_GROUP" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PERP_SEX" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PERP_RACE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="X_COORD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Y_COORD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Latitude" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Longitude" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Lon_Lat" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="DateTime" />
+            <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PD_CD" selected="True" />
+            <SelectField field="PD_DESC" selected="True" />
+            <SelectField field="KY_CD" selected="True" rename="KEY_CD" />
+            <SelectField field="OFNS_DESC" selected="True" rename="OFFENSE_DESC" />
+            <SelectField field="LAW_CODE" selected="True" />
+            <SelectField field="LAW_CAT_CD" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="702" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Classification_Id_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int64</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="870" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\shaba\AppData\Local\Temp\Engine_7228_4dfda308dc9f4d9a94d73e3f3e4877fb_\Engine_3180_b6917d7d42b64a7b9d4306ce37a82714_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeToday()" field="DI_CreateDate" size="10" type="Date" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobId" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [LAW_CAT_CD]=&quot;F&quot; THEN &quot;Felony&quot; &#xA;ELSEIF [LAW_CAT_CD]=&quot;M&quot; THEN &quot;Misdemeanor&quot; &#xA;ELSE &quot;Violation&quot; ENDIF" field="Level_Of_Offense" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeToday()
+DI_JobId = [Engine.WorkflowFileName]
+Level_Of_Of...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="PD_CD" />
+            <Field field="PD_DESC" />
+            <Field field="KEY_CD" />
+            <Field field="OFFENSE_DESC" />
+            <Field field="LAW_CODE" />
+            <Field field="LAW_CAT_CD" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="474" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\shaba\AppData\Local\Temp\Engine_7228_4dfda308dc9f4d9a94d73e3f3e4877fb_\Engine_3180_a8ab5c03aa4b4494b15185f30106eb41_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="474" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[PD_CD]!= Null()
+AND
+[PD_DESC]!= Null()
+AND
+[LAW_CODE]!= Null()
+AND
+[LAW_CAT_CD]!= Null()
+AND
+[OFFENSE_DESC]!= Null()
+AND
+[KEY_CD]!= Null()
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[PD_CD]!= Null()
+AND
+[PD_DESC]!= Null()
+AND
+[LAW_CODE]!= Null()
+AND
+[LAW_CAT_CD]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([PD_CD]) THEN &quot;NA&quot; ELSE [PD_CD] ENDIF" field="PD_CD" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([PD_DESC]) THEN &quot;NA&quot; ELSE [PD_DESC] ENDIF" field="PD_DESC" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([KEY_CD]) THEN &quot;NA&quot; ELSE [KEY_CD] ENDIF" field="KEY_CD" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([OFFENSE_DESC]) THEN &quot;NA&quot; ELSE [OFFENSE_DESC] ENDIF" field="OFFENSE_DESC" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([LAW_CODE]) THEN &quot;NA&quot; ELSE [LAW_CAT_CD] ENDIF" field="LAW_CODE" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([LAW_CAT_CD]) THEN &quot;NA&quot; ELSE [LAW_CAT_CD] ENDIF" field="LAW_CAT_CD" size="254" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PD_CD = IF IsNull([PD_CD]) THEN "NA" ELSE [PD_CD] ENDIF
+PD_DESC = IF IsNull([PD_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\shaba\AppData\Local\Temp\Engine_7228_4dfda308dc9f4d9a94d73e3f3e4877fb_\Engine_3180_04f5d39a508148a482a2c9d7952edb9d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="761" y="101" width="153" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 13</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+          <Caption>Container 13</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="786" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||DimClassification</File>
+              <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+              <FormatSpecificOptions>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Query=DimClassification</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Unique" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Unique" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimClassification</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="da5935e4-795f-4809-b670-33030b8a4596" />
+      <Telemetry>
+        <PreviousWorkflowId value="2ce7afd4-f88c-4857-a1e7-336ae6954232" />
+        <OriginWorkflowId value="2ce7afd4-f88c-4857-a1e7-336ae6954232" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

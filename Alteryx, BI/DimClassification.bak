@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||"NYC_Arrest_Data"."dbo"."InputFileStagging"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER
+Query="NYC_Arrest_Data"."dbo"."Inp...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ARREST_KEY" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="ARREST_DATE" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="PD_CD" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="PD_DESC" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="KY_CD" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="OFNS_DESC" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="LAW_CODE" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="LAW_CAT_CD" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="ARREST_BORO" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="ARREST_PRECINCT" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="JURISDICTION_CODE" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="AGE_GROUP" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="PERP_SEX" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="PERP_RACE" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="X_COORD_CD" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="Y_COORD_CD" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="Latitude" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="Longitude" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="Lon_Lat" size="254" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+            <Field name="DI_CreateDate" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="Date" />
+            <Field name="DI_JobId" size="16777216" source="File: aka:DESKTOP-0D360TV\DAMG_MSSQLSERVER|||&quot;NYC_Arrest_Data&quot;.&quot;dbo&quot;.&quot;InputFileStagging&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PD_CD" selected="True" />
+            <SelectField field="PD_DESC" selected="True" />
+            <SelectField field="KY_CD" selected="True" rename="KEY_CD" />
+            <SelectField field="OFNS_DESC" selected="True" rename="OFFENSE_DESC" />
+            <SelectField field="LAW_CODE" selected="True" />
+            <SelectField field="LAW_CAT_CD" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeToday()" field="DI_CreateDate" size="10" type="Date" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobId" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeToday()
+DI_JobId = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Classification_Id_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\sanni\AppData\Local\Temp\Engine_27144_4b754c9768854f5d8274369412cd8809_\Engine_22344_60c4a5e5025b44bf9da2c6cfcd774477_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimClassification</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="da5935e4-795f-4809-b670-33030b8a4596" />
+      <Telemetry>
+        <PreviousWorkflowId value="2ce7afd4-f88c-4857-a1e7-336ae6954232" />
+        <OriginWorkflowId value="2ce7afd4-f88c-4857-a1e7-336ae6954232" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

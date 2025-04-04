@@ -1,0 +1,1219 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="666" y="955" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=`inputfilestaging`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ARREST_KEY" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_DATE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PD_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="KY_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="OFNS_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="LAW_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="LAW_CAT_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_BORO" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="ARREST_PRECINCT" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="JURISDICTION_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="AGE_GROUP" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PERP_SEX" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="PERP_RACE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="X_COORD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Y_COORD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Latitude" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Longitude" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="Lon_Lat" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="DateTime" />
+            <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`inputfilestaging`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="2286" y="1087" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="True" />
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_ArrestDateKey" selected="True" />
+                <SelectField field="Input_#2_Classification_Id_SK" selected="True" />
+                <SelectField field="Input_#3_ArrestInfo_Id_SK" selected="True" />
+                <SelectField field="Input_#4_PrepAttribute_Id_SK" selected="True" />
+                <SelectField field="Input_#5_ARREST_KEY" selected="True" />
+                <SelectField field="Input_#5_ARREST_PRECINCT" selected="True" />
+                <SelectField field="Input_#5_X_COORD_CD" selected="True" />
+                <SelectField field="Input_#5_Y_COORD_CD" selected="True" />
+                <SelectField field="Input_#5_Latitude" selected="True" />
+                <SelectField field="Input_#5_Longitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2394" y="1087" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ARREST_KEY" selected="True" />
+            <SelectField field="DateKey" selected="False" />
+            <SelectField field="Classification_Id_SK" selected="True" />
+            <SelectField field="ArrestInfo_Id_SK" selected="True" />
+            <SelectField field="PrepAttribute_Id_SK" selected="True" />
+            <SelectField field="ARREST_PRECINCT" selected="True" />
+            <SelectField field="X_COORD_CD" selected="True" />
+            <SelectField field="Y_COORD_CD" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="ArrestDateKey" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2526" y="1087" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||FactArrest</File>
+          <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=FactArrest</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1518" y="1759" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ARREST_KEY" selected="True" />
+            <SelectField field="ARREST_PRECINCT" selected="True" />
+            <SelectField field="X_COORD_CD" selected="True" />
+            <SelectField field="Y_COORD_CD" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="967" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1110" y="1015" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="954" y="991" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([PD_CD]) THEN &quot;NA&quot; ELSE [PD_CD] ENDIF" field="PD_CD" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([PD_DESC]) THEN &quot;NA&quot; ELSE [PD_DESC] ENDIF" field="PD_DESC" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([KY_CD]) THEN &quot;NA&quot; ELSE [KY_CD] ENDIF" field="KY_CD" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([OFNS_DESC]) THEN &quot;NA&quot; ELSE [OFNS_DESC] ENDIF" field="OFNS_DESC" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([LAW_CODE]) THEN &quot;NA&quot; ELSE [LAW_CAT_CD] ENDIF" field="LAW_CODE" size="254" type="V_WString" />
+            <FormulaField expression="IF IsNull([LAW_CAT_CD]) THEN &quot;NA&quot; ELSE [LAW_CAT_CD] ENDIF" field="LAW_CAT_CD" size="254" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PD_CD = IF IsNull([PD_CD]) THEN "NA" ELSE [PD_CD] ENDIF
+PD_DESC = IF IsNull([PD_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="1003" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF &#xA;[AGE_GROUP]=&quot;25-44&quot; OR&#xA;[AGE_GROUP]=&quot;45-64&quot; OR&#xA;[AGE_GROUP]=&quot;18-24&quot; OR&#xA;[AGE_GROUP]=&quot;&lt;18&quot; OR&#xA;[AGE_GROUP]=&quot;65+&quot;&#xA;THEN&#xA;[AGE_GROUP]&#xA;ELSE&#xA;&quot;-99&quot;&#xA;ENDIF" field="AGE_GROUP" size="254" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AGE_GROUP = IF 
+[AGE_GROUP]="25-44" OR
+[AGE_GROUP]="45-64" OR
+[AGE_GROUP]="18-24...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1469" y="1374" width="481" height="285" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Dim_Date</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1506" y="1423" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DI_CreateDate" selected="False" />
+                <SelectField field="Lon_Lat" selected="False" />
+                <SelectField field="Longitude" selected="False" />
+                <SelectField field="Latitude" selected="False" />
+                <SelectField field="Y_COORD_CD" selected="False" />
+                <SelectField field="X_COORD_CD" selected="False" />
+                <SelectField field="PERP_RACE" selected="False" />
+                <SelectField field="PERP_SEX" selected="False" />
+                <SelectField field="AGE_GROUP" selected="False" />
+                <SelectField field="JURISDICTION_CODE" selected="False" />
+                <SelectField field="ARREST_PRECINCT" selected="False" />
+                <SelectField field="ARREST_BORO" selected="False" />
+                <SelectField field="LAW_CAT_CD" selected="False" />
+                <SelectField field="LAW_CODE" selected="False" />
+                <SelectField field="OFNS_DESC" selected="False" />
+                <SelectField field="KY_CD" selected="False" />
+                <SelectField field="PD_DESC" selected="False" />
+                <SelectField field="PD_CD" selected="False" />
+                <SelectField field="ARREST_DATE" selected="True" />
+                <SelectField field="DI_JobId" selected="False" />
+                <SelectField field="ARREST_KEY" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1866" y="1483" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ArrestDateKey" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1758" y="1495" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>ARREST_DATE</FieldFind>
+              <FieldSearch>ARREST_DATE</FieldSearch>
+              <ReplaceFoundField>Actual_Date</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="ArrestDateKey" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1590" y="1543" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DateYear" selected="False" />
+                <SelectField field="Actual_Date" selected="False" />
+                <SelectField field="DateMonth" selected="False" />
+                <SelectField field="DateDay" selected="False" />
+                <SelectField field="ARREST_DATE" selected="True" />
+                <SelectField field="DI_JobId" selected="False" />
+                <SelectField field="DI_CreateDate" selected="False" />
+                <SelectField field="ArrestDateKey" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1494" y="1543" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Query=`dimdate`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="V_WString" />
+                <Field name="DI_CreateDate" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="DateTime" />
+                <Field name="ARREST_DATE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="V_WString" />
+                <Field name="Actual_Date" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="DateTime" />
+                <Field name="DateYear" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="Int16" />
+                <Field name="DateMonth" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="Int16" />
+                <Field name="DateDay" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="Int16" />
+                <Field name="ArrestDateKey" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimdate`" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1433" y="858" width="649" height="420" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DimClassification</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1458" y="907" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="PD_CD" selected="True" />
+                <SelectField field="PD_DESC" selected="True" />
+                <SelectField field="KY_CD" selected="True" />
+                <SelectField field="OFNS_DESC" selected="True" />
+                <SelectField field="LAW_CODE" selected="True" />
+                <SelectField field="LAW_CAT_CD" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1710" y="907" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[PD_CD]+[PD_DESC]+[KY_CD]+[OFNS_DESC]+[LAW_CODE]+[LAW_CAT_CD]" field="ClassificationConcat" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ClassificationConcat = [PD_CD]+[PD_DESC]+[KY_CD]+[OFNS_DESC]+[LAW_CODE]+[LAW_CAT...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1458" y="1087" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Query=`dimclassification`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Classification_Id_SK" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="Int64" />
+                <Field name="PD_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="PD_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="KEY_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="OFFENSE_DESC" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="LAW_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="LAW_CAT_CD" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="DI_CreateDate" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="DateTime" />
+                <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+                <Field name="Level_Of_Offense" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimclassification`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1578" y="1087" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Classification_Id_SK" selected="True" />
+                <SelectField field="PD_CD" selected="True" />
+                <SelectField field="PD_DESC" selected="True" />
+                <SelectField field="KEY_CD" selected="True" />
+                <SelectField field="OFFENSE_DESC" selected="True" />
+                <SelectField field="LAW_CODE" selected="True" />
+                <SelectField field="LAW_CAT_CD" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1686" y="1087" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[PD_CD]+[PD_DESC]+[KEY_CD]+[OFFENSE_DESC]+[LAW_CODE]+[LAW_CAT_CD]" field="ClassificationConcat" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ClassificationConcat = [PD_CD]+[PD_DESC]+[KEY_CD]+[OFFENSE_DESC]+[LAW_CODE]+[LAW...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1878" y="1015" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>ClassificationConcat</FieldFind>
+              <FieldSearch>ClassificationConcat</FieldSearch>
+              <ReplaceFoundField>PD_DESC</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="Classification_Id_SK" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1998" y="1015" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Classification_Id_SK" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1421" y="450" width="685" height="351" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Dim_ArrestInfo</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1446" y="499" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ARREST_BORO" selected="True" />
+                <SelectField field="JURISDICTION_CODE" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobId" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1446" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Query=`dimarrestinfo`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ArrestInfo_Id_SK" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`" type="Int64" />
+                <Field name="ARREST_BORO" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`" type="V_WString" />
+                <Field name="JURISDICTION_CODE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`" type="V_WString" />
+                <Field name="DI_CreateDate" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`" type="V_WString" />
+                <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`" type="V_WString" />
+                <Field name="ARREST_BORO_DESC" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimarrestinfo`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1602" y="499" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[ARREST_BORO]+[JURISDICTION_CODE]" field="ArrestConcat" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[ArrestConcat = [ARREST_BORO]+[JURISDICTION_CODE]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1578" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ArrestInfo_Id_SK" selected="True" />
+                <SelectField field="ARREST_BORO" selected="True" />
+                <SelectField field="JURISDICTION_CODE" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1686" y="655" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[ARREST_BORO]+[JURISDICTION_CODE]" field="ArrestConcat" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[ArrestConcat = [ARREST_BORO]+[JURISDICTION_CODE]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1890" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>ArrestConcat</FieldFind>
+              <FieldSearch>ArrestConcat</FieldSearch>
+              <ReplaceFoundField>JURISDICTION_CODE</ReplaceFoundField>
+              <FindMode>FindAny</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="ArrestInfo_Id_SK" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2022" y="559" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ArrestInfo_Id_SK" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1409" y="54" width="745" height="327" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Dim_PerpetratorAttribute</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1470" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="AGE_GROUP" selected="True" />
+                <SelectField field="PERP_SEX" selected="True" />
+                <SelectField field="PERP_RACE" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobId" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1434" y="235" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>43E4633EBDB736C8819D17C800B92B3BC040FAD64E0979190E7FFF7FE69B7</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Query=`dimperpetratorattribute`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PrepAttribute_Id_SK" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`" type="Int64" />
+                <Field name="AGE_GROUP" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`" type="V_WString" />
+                <Field name="GENDER" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`" type="V_WString" />
+                <Field name="RACE" size="254" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`" type="V_WString" />
+                <Field name="DI_CreateDate" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`" type="V_WString" />
+                <Field name="DI_JobId" size="65535" source="File: odbc:DSN=MySQL;UID=root;PWD=__EncPwd1__|||`dimperpetratorattribute`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1914" y="223" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>PerpConcat</FieldFind>
+              <FieldSearch>PerpConcat</FieldSearch>
+              <ReplaceFoundField>GENDER</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="PrepAttribute_Id_SK" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1542" y="235" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="PrepAttribute_Id_SK" selected="True" />
+                <SelectField field="AGE_GROUP" selected="True" />
+                <SelectField field="GENDER" selected="True" />
+                <SelectField field="RACE" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2070" y="223" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="PrepAttribute_Id_SK" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1638" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[AGE_GROUP]+[PERP_SEX]+[PERP_RACE]" field="PerpConcat" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[PerpConcat = [AGE_GROUP]+[PERP_SEX]+[PERP_RACE]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1722" y="235" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[AGE_GROUP]+[GENDER]+[RACE]" field="PerpConcat" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[PerpConcat = [AGE_GROUP]+[GENDER]+[RACE]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="46" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="46" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="25" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="5" Connection="Source" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FactTable</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0db09121-2666-4da3-a525-9f520e8c3a28" />
+      <Telemetry>
+        <PreviousWorkflowId value="6931ddc3-213d-4947-b5f1-2c4c9461160e" />
+        <OriginWorkflowId value="6931ddc3-213d-4947-b5f1-2c4c9461160e" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
